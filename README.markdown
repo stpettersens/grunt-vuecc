@@ -43,6 +43,7 @@ module.exports = function(grunt) {
 * **options: Object** : Object containing the following options:
   * **src: string** : File path or file path with wildcard(s) (Mandatory option).
   * **header: boolean** : Generate commented header for output (default: *true*).
+  * **references: string[]**: Array of TypeScript reference path includes (default: []). 
   * **verbose: boolean** : Display console output for invocation (default: *false*).
   * **inputExt: string** : File extension to use for input (default: *.vue.ts*).
   * **outputExt: string** : File extension to use for output (default: *.ts*).
