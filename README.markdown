@@ -11,7 +11,7 @@
 
 First install [vuecc](https://github.com/stpettersens/vue-component-compiler) globally:
 
-	$ npm install -g vue-component-compiler
+    $ npm install -g vue-component-compiler
 
 Then:
 
@@ -19,7 +19,16 @@ Then:
 
 ##### Usage:
 ```js
-
+grunt.initConfig({
+    vuecc: {
+        components:
+            Options: {
+               Src: 'input.the.ts',
+            }
+        }
+    }
+});
+            
 ```
 
 ##### Authors
