@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 					header: true,
 					verbose: false,
 					inputExt: '.vue.ts',
-					outputExt: '.ctrl.js'
+					outputExt: '.js'
 				}
 			}
 		}
@@ -38,13 +38,23 @@ module.exports = function(grunt) {
 };
             
 ```
+##### Options:
 
-##### Authors
+* **options: Object** : Object containing the following options:
+  * **src: string** : File path or file path with wildcard(s) (Mandatory option).
+  * **header: boolean** : Generate commented header for output (default: *true*).
+  * **verbose: boolean** : Display console output for invocation (default: *false*).
+  * **inputExt: string** : File extension to use for input (default: *.vue.ts*).
+  * **outputExt: string** : File extension to use for output (default: *.ts*).
+
+##### Authors:
 
 * [Sam Saint-Pettersen](https://github.com/stpettersens)
 
-_Using Gulp?_ :tropical_drink: [gulp-vuecc](http://github.com/stpettersens/gulp-vuecc)
-
-##### License
+##### License:
 
 [MIT](https://opensource.org/licenses/MIT)
+
+##### Using Gulp?
+
+:tropical_drink: [grunt-vuecc](http://github.com/stpettersens/grunt-vuecc)
