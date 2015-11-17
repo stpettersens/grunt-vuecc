@@ -8,15 +8,13 @@
 
 'use strict';
 
-var glob = require('glob');
-
 module.exports = function(grunt) {
 
   grunt.registerMultiTask('vuecc', 'Grunk task for unoffical Vue component compiler', function() {
 
     var options = this.options({
       src: null,
-      verbose: true,
+      verbose: false,
       header: true,
       references: [],
       inputExt: '.vue.ts',
@@ -45,7 +43,7 @@ module.exports = function(grunt) {
         grunt.fail.fatal('Source file(s) must be defined.');
     }
 
-    var files = glob.sync(options.src);
+    var files = grunt.file.expand(options.src);
 
     var iExt = options.src.substr(-7);
     var oExt = options.src.substr(-3);
