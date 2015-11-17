@@ -58,4 +58,4 @@ module.exports = function(grunt) {
 
 ##### Using Gulp?
 
-:tropical_drink: [grunt-vuecc](http://github.com/stpettersens/grunt-vuecc)
+:tropical_drink: [gulp-vuecc](http://github.com/stpettersens/gulp-vuecc)
