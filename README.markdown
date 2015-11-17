@@ -19,15 +19,23 @@ Then:
 
 ##### Usage:
 ```js
-grunt.initConfig({
-    vuecc: {
-        components:
-            Options: {
-               Src: 'input.the.ts',
-            }
-        }
-    }
-});
+module.exports = function(grunt) {
+	grunt.initConfig({
+		vuecc: {
+			controllers: {
+				options: {
+					src: 'clientside/controllers/*.vue.ts',
+					header: true,
+					verbose: false,
+					inputExt: '.vue.ts',
+					outputExt: '.ctrl.js'
+				}
+			}
+		}
+	});
+	grunt.loadNpmTasks('grunt-vuecc');
+	grunt.registerTask('default', ['vuecc']);
+};
             
 ```
 
