@@ -1,5 +1,5 @@
-### grunk-vuecc
-> :boar: Grunk plug-in for unofficial [Vue component compiler](https://github.com/stpettersens/vue-component-compiler).
+### grunt-vuecc
+> :boar: Grunt task for unofficial [Vue component compiler](https://github.com/stpettersens/vue-component-compiler).
 
 <!--
 [![Build Status](https://travis-ci.org/stpettersens/gulp-codo.png?branch=master)](https://travis-ci.org/stpettersens/gulp-codo)
