@@ -22,9 +22,9 @@ Then:
 module.exports = function(grunt) {
 	grunt.initConfig({
 		vuecc: {
-			controllers: {
+			components: {
 				options: {
-					src: 'clientside/controllers/*.vue.ts',
+					src: '*.vue.ts',
 					header: true,
 					verbose: false,
 					inputExt: '.vue.ts',
@@ -42,6 +42,8 @@ module.exports = function(grunt) {
 ##### Authors
 
 * [Sam Saint-Pettersen](https://github.com/stpettersens)
+
+_Using Gulp?_ :tropical_drink: [gulp-vuecc](http://github.com/stpettersens/gulp-vuecc)
 
 ##### License
 
