@@ -10,7 +10,7 @@
 
 module.exports = function(grunt) {
 
-  grunt.registerMultiTask('vuecc', 'Grunk task for unoffical Vue component compiler', function() {
+  grunt.registerMultiTask('vuecc', 'Grunt task for unoffical Vue component compiler', function() {
 
     var options = this.options({
       src: null,
