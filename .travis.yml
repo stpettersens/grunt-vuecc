@@ -11,7 +11,7 @@ node_js:
 # Prerequisites:
 # * Install grunt.
 # * Install vue-component-compiler (vuecc-compiler package).
-install: 
+before_install: 
     - npm install -g grunt-cli
     - npm install grunt
     - npm install -g vuecc-compiler
