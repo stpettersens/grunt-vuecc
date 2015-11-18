@@ -14,5 +14,5 @@ node_js:
 # * Install used definitions.
 before_script: "npm install -g vuecc-compiler && npm install -g tsd && tsd install"
 
-# Invoke tests for grunt .
+# Invoke tests for grunt.
 script: grunt test
