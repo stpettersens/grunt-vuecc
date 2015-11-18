@@ -9,10 +9,11 @@ node_js:
     - 0.11
 
 # Prerequisites:
+# * Install grunt.
 # * Install vue-component-compiler (vuecc-compiler package).
 # * Install TSD to retrieve used definitions from DefinitelyTyped.
 # * Install used definitions.
-before_script: "npm install -g vuecc-compiler && npm install -g tsd && tsd install"
+before_script: "npm install grunt && npm install -g vuecc-compiler && npm install -g tsd && tsd install"
 
 # Invoke tests for grunt.
 script: grunt test
