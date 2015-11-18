@@ -2,7 +2,7 @@
 > :boar: Grunt task for unofficial [Vue component compiler](https://github.com/stpettersens/vue-component-compiler).
 
 [![Build Status](https://travis-ci.org/stpettersens/grunt-vuecc.png?branch=master)](https://travis-ci.org/stpettersens/grunt-vuecc)
-[![npm version](https://badge.fury.io/js/grunt-vuecc.svg)](http://npmjs.com/package/gulp-vuecc)
+[![npm version](https://badge.fury.io/js/grunt-vuecc.svg)](http://npmjs.com/package/grunt-vuecc)
 [![Dependency Status](https://david-dm.org/stpettersens/grunt-vuecc.png?theme=shields.io)](https://david-dm.org/stpettersens/grunt-vuecc) [![Development Dependency Status](https://david-dm.org/stpettersens/grunt-vuecc/dev-status.png?theme=shields.io)](https://david-dm.org/stpettersens/grunt-vuecc#info=devDependencies)
 ##### Install:
 
