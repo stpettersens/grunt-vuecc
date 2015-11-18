@@ -37,6 +37,11 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "vue",
+    "component",
+    "compiler",
+    "tool",
+    "utility"
   ]
 }
