@@ -25,16 +25,16 @@ module.exports = function(grunt) {
 
     // Before generating any new files, remove any previously-created files.
     clean: {
-      tests: ['tmp']
+      tests: ['greeter.ts']
     },
 
     // Configuration to be run (and then tested).
     vuecc: {
       components: { 
         options: {
-          src: 'eventbb.vue.ts',
+          src: 'greeter.vue.ts',
           verbose: false,
-          header: true,
+          header: false,
           references: [
             'typings/vue/vue.d.ts'
           ],
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'vuecc']); //, 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'vuecc', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);

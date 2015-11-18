@@ -1,0 +1,16 @@
+#
+# Travis-CI configuration for grunt-vuecc.
+#
+sudo: false
+language: node_js
+node_js:
+    - "iojs"
+    - "0.10"
+    - 0.11
+
+# Install TSD to retrieve used definitions from DefinitelyTyped.
+# Install used definitions.
+before_script: "npm install -g tsd && tsd install"
+
+# Invoke tests for grunt .
+script: grunt test

@@ -29,7 +29,7 @@ module.exports = function(grunt) {
           args: opts
         }, 
         function(err, res, code) {
-          if(res.stdout && opts.indexOf('--quiet') == -1) {
+          if(res.stdout && opts.indexOf('--quiet') === -1) {
             grunt.log.writeln(res.stdout);
           }
           if(res.stderr) {
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
     }); 
     if(!options.verbose) {
         var f = ' file';
-        if(count > 1) f += 's';
+        if(count > 1) { f += 's'; }
         grunt.log.ok(count + f + ' created.');  
     }
   });
