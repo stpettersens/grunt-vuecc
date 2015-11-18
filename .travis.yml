@@ -17,4 +17,4 @@ before_install:
     - npm install -g vuecc-compiler
 
 # Invoke tests for grunt.
-script: grunt test
+script: npm test
